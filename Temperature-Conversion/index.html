@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <h1>Temperature Conversion</h1>
+        <div>
+            <label for="Celcius">Celcius</label>
+            <input type="text" id="cel-input"  >
+        </div>
+        <div>
+            <label for="farenheit">Farenheit</label>
+            <input type="text" id="far-input" >
+        </div>
+        <button class="button" onclick="handleSubmit('cel',event)">Convert to Fahrenheit</button>
+        <button class="button"  onclick="handleSubmit('far',event)">Convert to Celcius</button>
+        <p id="result"></p>
+    </div>
+    <script defer src="/Temperature-Conversion/script.js"></script>
+
+</body>
+</html>
