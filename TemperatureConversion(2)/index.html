@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div>
         <h1>Temperature Conversion 2 </h1>
         <div>
             <label for="celcius">Celcius</label>
-            <input id="cel" type="text" onchange="showcel()">
+            <input id="cel" type="text" onkeyup="showcel()">
         </div>
         <div>
             <label for="fahren">Fahren</label>
-            <input id="far" type="text" onchange="showfar()">
+            <input id="far" type="text" onkeydown="showfar()">
         </div>
         <p id="result"></p>
     </div>

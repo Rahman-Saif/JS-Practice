@@ -9,13 +9,27 @@ let result=document.getElementById("result");
     
     if(prop == 'cel'){
         let celInput=document.getElementById('cel-input').value;
-        celInput=Number(celInput)  
-        result.innerHTML=celInput*5;
+        celInput=parseFloat(celInput);
+        
+        if(isNaN(celInput)){
+            alert("please enter a valid number");
+        }else{
+
+        
+        result.innerHTML=(celInput *9/5)+32;
+        }
 
     }else{
         let FarhInput=document.getElementById('far-input').value;
-        FarhInput=Number(FarhInput);
-        result.innerHTML=FarhInput*5;
+        FarhInput=parseFloat(FarhInput);
+
+        if(isNaN(FarhInput)){
+            alert("Please enter a valid number!");
+        }else{
+
+        
+        result.innerHTML=(FarhInput -32)*5/9;
+        }
     }
   
 }
