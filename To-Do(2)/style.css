@@ -1,0 +1,109 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container to center the To-Do List */
+div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
+    text-align: center;
+}
+
+/* Header styling */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form input styling */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: border 0.3s ease;
+}
+
+/* Input field on focus */
+input[type="text"]:focus {
+    border: 1px solid #007bff;
+}
+
+/* Add task button styling */
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect on button */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* My Tasks section */
+h2 {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Task list styling */
+ul.list-group {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual task item styling */
+ul.list-group li {
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: move;
+    transition: background-color 0.3s ease;
+    border: 1px solid #ccc;
+}
+
+/* Change background color when dragging */
+ul.list-group li.dragging {
+    background-color: #e0e0e0;
+}
+
+/* Task item hover */
+ul.list-group li:hover {
+    background-color: #e9ecef;
+}
+
+/* Task item when dragging over it */
+ul.list-group li.drag-over {
+    border: 2px dashed #007bff;
+}

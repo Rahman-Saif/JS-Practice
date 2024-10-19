@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <h1>Color Picker</h1>
+        
+        <input type="radio" id="dec" name="dec2hex" value="Decimal" checked>
+        <label for="">Decimal</label>
+        <input type="radio" id="hex" name="dec2hex" value="Hex" >]
+        <label for="">Hex</label>
+
+        <div>
+            <label for="red">Red</label>
+            <input type="range" name="red" id="redInput" min="0" max="255" onchange="calculate()">
+            <div id="redResult"></div>
+        </div>
+        <div>
+            <label for="Green">Green</label>
+            <input type="range" name="Green" id="GreenInput" min="0" max="255" onchange="calculate()">
+            <div id="GreenResult"></div>
+        </div>
+        <div>
+            <label for="Blue">Blue</label>
+            <input type="range" name="red" id="BlueInput" min="0" max="255" onchange="calculate()">
+            <div id="BlueResult"></div>
+        </div>
+        <div id="result">
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
