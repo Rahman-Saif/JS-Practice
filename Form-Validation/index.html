@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Registration Form</h1>
+        <div>
+            <label for="firstname">First Name</label>
+            <input type="text" id="fname-input">
+            <span id="fname-error" class="error"></span>
+        </div>
+        <div>
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lname-input">
+            <span id="lname-error" class="error"></span>
+        </div>
+        <div>
+            <label for="gender">Gender</label>
+            <input type="radio" value="male" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" value="female" name="gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" value="N/A" name="gender" id="N/A">
+            <label for="N/A">N/A</label>
+            <span id="gender-error" class="error"></span>
+        </div>
+        <div>
+            <label for="zipcode">Zip Code</label>
+            <input type="number" id="zip-input">
+            <span id="zip-error" class="error"></span>
+        </div>
+        <div>
+            <label for="state">State</label>
+            <select name="state" id="state">
+                <option value="NY" class="state">New York</option>
+                <option value="Dhaka" class="state">Dhaka</option>
+                <option value="Delhi" class="state">Delhi</option>
+                <option value="jani" class="state">jani na</option>
+            </select>
+            <span id="state-error" class="error"></span>
+        </div>
+         <div>
+            <label for="address">Address</label>
+            <input type="text" id="address-input">
+            <span id="address-error" class="error"></span>
+        </div>
+         <div>
+            <label for="email">Email</label>
+            <input type="email" id="email-input">
+            <span id="email-error" class="error"></span>
+        </div>
+         <div>
+            <label for="telephone">Telephone</label>
+            <input type="number" id="telephone-input">
+            <span id="telephone-error" class="error"></span>
+        </div>
+        <div>
+            <input type="checkbox" value="accept" name="checks" id="accept">
+            <label for="accept">I have read and agree to the terms of service</label>
+            <span id="acceptError" class="error"></span>
+        </div>
+        <div>
+            <input type="checkbox" value="inform" name="checks" id="inform">
+            <label for="inform">I agree to receive information</label>
+            <span id="inform-Error" class="error"></span>
+        </div>
+        <div>
+            <label for="comments">Comments</label>
+            <input type="text" value="comment" name="comment" id="comment">
+            <span id="comment-Error" class="error"></span>
+        </div>
+        <div>
+            <label for="password">Select Password</label>
+            <input type="password" value="password" name="password" id="password">
+            <span id="password-error" class="error"></span>
+        </div>
+        <div>
+            <label for="confirm password">Confirm Password</label>
+            <input type="text" value="password" name="password" id="confirm-password">
+            <span id="cpass-Error" class="error"></span>
+        </div>
+        <input type="submit" value="submit" id="submit">
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
