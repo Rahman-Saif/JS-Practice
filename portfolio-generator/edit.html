@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <link rel="stylesheet" href="edit.css">
+    
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <!-- Navbar Section -->
+            <label for="navbar">Navbar</label>
+            <div class="form-group">
+                <input type="text" id="item1" name="item1" placeholder="Navbar Item 1">
+                <input type="text" id="item2" name="item2" placeholder="Navbar Item 2">
+                <input type="text" id="item3" name="item3" placeholder="Navbar Item 3">
+            </div>
+
+            <!-- Banner Section -->
+            <label for="banner">Banner</label>
+            <div class="form-group">
+                <input type="text" id="bannerHeading" name="bannerText1" placeholder="Banner Text 1">
+                <input type="text" id="bannerDescription" name="bannerText2" placeholder="Banner Text 2">
+                <input type="text" id="bannerbuttonText" name="bannerText3" placeholder="Banner Text 3">
+                <input type="file" id="bannerImage" name="bannerImage" accept="image/*">
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" id="submitBtn" class="submit-btn">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

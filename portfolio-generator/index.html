@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">My Portfolio</div>
+            <ul id="navbar" class="nav-items">
+                <li ><a href="#" id="home" draggable="true">Home</a></li>
+                <li><a href="#" id="contact" draggable="true">Contact</a></li>
+                <li><a href="#" id="blog" draggable="true">Blog</a></li>
+            </ul>
+            <!-- <button class="edit-btn" onclick="workOn()">Edit</button> -->
+            <a href="edit.html" class="edit-btn">Edit</a>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <div class="banner-content">
+            <div class="banner-text">
+                <h1 id="bannerHeading">Welcome to My Portfolio</h1>
+                <p id="bannerText">Discover my latest projects, experiences, and skills. Stay connected and let's create something amazing together!</p>
+                <button class="cta-btn" id="bannerButtonText">Learn More</button>
+            </div>
+            <div class="banner-image">
+                <img src="/portfolio-generator/image/1.jpg" alt="Banner Image">
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
