@@ -140,3 +140,114 @@ input[type="file"] {
         height: 100px;
     }
 }
+
+.input-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    display: flex;
+    gap: 30px;
+}
+
+.text-inputs,
+.number-inputs {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-field label {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+.input-field input {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.input-field input[type="number"] {
+    width: 100px;
+}
+
+/* Remove number input arrows */
+.input-field input[type="number"]::-webkit-inner-spin-button,
+.input-field input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-field input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Focus and hover states */
+.input-field input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.input-field input:hover {
+    border-color: #b3b3b3;
+}
+
+/* Placeholder styling */
+.input-field input::placeholder {
+    color: #999;
+    font-size: 13px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .input-container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .input-group {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .text-inputs,
+    .number-inputs {
+        width: 100%;
+    }
+
+    .input-field input[type="number"] {
+        width: 100%;
+    }
+}
+
+/* Optional: Animation for focus */
+@keyframes focusIn {
+    from {
+        transform: scale(0.98);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.input-field input:focus {
+    animation: focusIn 0.2s ease-out;
+}

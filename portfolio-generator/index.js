@@ -5,6 +5,25 @@ let bannerHeading1=document.getElementById("bannerHeading");
 let bannerText1=document.getElementById("bannerText");
 let bannerButtonText1=document.getElementById("bannerButtonText");
 
+let firstUniname=document.getElementById("first_uni_name");
+let secondUniname=document.getElementById("second_uni_name");
+let thirdUniname=document.getElementById("third_uni_name");
+
+let firstUnidesc=document.getElementById("first_uni_desc");
+let secondUnidesc=document.getElementById("second_uni_desc");
+let thirdUnidesc=document.getElementById("third_uni_desc");
+
+let firstSkill=document.getElementById("skill1");
+let secondSkill=document.getElementById("skill2");
+let thirdSkill=document.getElementById("skill3");
+let fourthSkill=document.getElementById("skill4");
+
+let firstProficiency=document.getElementById("progress1");
+let secondProficiency=document.getElementById("progress2");
+let thirdProficiency=document.getElementById("progress3");
+let fourthProficiency=document.getElementById("progress4");
+
+
 const navItems=document.querySelectorAll("#navbar li");
 const navbar=document.getElementById("navbar");
 let draggedItem=null;
@@ -25,14 +44,46 @@ document.addEventListener("DOMContentLoaded",()=>{
     let secondDesc=localStorage.getItem("secondDesc");
     let thirdDesc=localStorage.getItem("thirdDesc");
 
+    let first_skill=localStorage.getItem("first_skill");
+    let second_skill=localStorage.getItem("second_skill");
+    let third_skill=localStorage.getItem("third_skill");
+    let fourth_skill=localStorage.getItem("fourth_skill");
 
-    console.log(bannerHeading);
+    let first_proficiency=localStorage.getItem("first_proficiency");
+    let second_proficiency=localStorage.getItem("second_proficiency");
+    let third_proficiency=localStorage.getItem("third_proficiency");
+    let fourth_proficiency=localStorage.getItem("fourth_proficiency");
+
+
+
+    console.log(firstProficiency);
     home.innerHTML=navItem1;
     contact.innerHTML=navItem2;
     blog.innerHTML=navItem3;
     bannerHeading1.innerHTML=bannerHeading;
     bannerText1.innerHTML=bannerDescription;
     bannerButtonText1.innerHTML=bannerbuttonText;
+
+    firstUniname.innerHTML=firstSchool;
+    secondUniname.innerHTML=secondSchool;
+    thirdUniname.innerHTML=thirdSchool;
+
+    firstUnidesc.innerHTML=firstDesc;
+    secondUnidesc.innerHTML=secondDesc;
+    thirdUnidesc.innerHTML=thirdDesc;
+
+    firstSkill.innerHTML=first_skill;
+    secondSkill.innerHTML=second_skill;
+    thirdSkill.innerHTML=third_skill;
+    fourthSkill.innerHTML=fourth_skill;
+
+
+    firstProficiency.style.width=first_proficiency;
+    secondProficiency.style.width=second_proficiency;
+    thirdProficiency.style.width=third_proficiency;
+    fourthProficiency.style.width=fourth_proficiency;
+  
+
     
 })
 

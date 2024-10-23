@@ -40,20 +40,20 @@
         <div class="slides">
             <div class="slide" style="background-image: url('/portfolio-generator/image/ins1.png')">
                 <div class="text-overlay">
-                    <h2>Image 1</h2>
-                    <p>This is the first image description</p>
+                    <h2 id="first_uni_name">Image 1</h2>
+                    <p id="first_uni_desc">This is the first image description</p>
                 </div>
             </div>
             <div class="slide" style="background-image: url('/portfolio-generator/image/ins2.png')">
                 <div class="text-overlay">
-                    <h2>Image 2</h2>
-                    <p>This is the second image description</p>
+                    <h2 id="second_uni_name">Image 2</h2>
+                    <p id="second_uni_desc">This is the second image description</p>
                 </div>
             </div>
             <div class="slide">
                 <div class="text-overlay" style="background-image: url('/portfolio-generator/image/ins3.jpg')">
-                    <h2>Image 3</h2>
-                    <p>This is the third image description</p>
+                    <h2 id="third_uni_name">Image 3</h2>
+                    <p id="third_uni_desc">This is the third image description</p>
                 </div>
             </div>
         </div>
@@ -61,7 +61,58 @@
         <button class="next" onclick="nextSlide()">&#10095;</button>
     </div>
     </section>
-    <h1>Hello </h1>
+    <section class="skills-section">
+    <h1 class="section-title">My Skills</h1>
+    <div class="skills-container">
+        <!-- Left side - Image -->
+        <div class="skills-image">
+            <img src="/portfolio-generator/image/1.jpg" alt="Skills Illustration">
+        </div>
+
+        <!-- Right side - Skills -->
+        <div class="skills-list">
+            <div class="skill-item">
+                <img src="/path-to-html-logo.png" alt="HTML" class="skill-logo">
+                <div class="skill-info">
+                    <h3 id="skill1">HTML</h3>
+                    <div class="progress-bar">
+                        <div class="progress" id="progress1" style="width: 90%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <img src="/path-to-css-logo.png" alt="CSS" class="skill-logo">
+                <div class="skill-info">
+                    <h3 id="skill2">CSS</h3>
+                    <div class="progress-bar">
+                        <div class="progress" id="progress2" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <img src="/path-to-js-logo.png" alt="JavaScript" class="skill-logo">
+                <div class="skill-info">
+                    <h3 id="skill3">JavaScript</h3>
+                    <div class="progress-bar">
+                        <div class="progress" id="progress3" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <img src="/path-to-nextjs-logo.png" alt="Next.js" class="skill-logo">
+                <div class="skill-info">
+                    <h3 id="skill4">Next.js</h3>
+                    <div class="progress-bar">
+                        <div class="progress" id="progress4" style="width: 35%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     <script src="index.js"></script>
 </body>
 </html>
