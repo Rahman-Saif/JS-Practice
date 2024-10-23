@@ -18,6 +18,14 @@ document.addEventListener("DOMContentLoaded",()=>{
     let bannerDescription=localStorage.getItem("bannerDescription");
     let bannerbuttonText=localStorage.getItem("bannerbuttonText");
 
+    let firstSchool=localStorage.getItem("firstSchool");
+    let secondSchool=localStorage.getItem("secondSchool");
+    let thirdSchool=localStorage.getItem("thirdSchool");
+    let firstDesc=localStorage.getItem("firstDesc");
+    let secondDesc=localStorage.getItem("secondDesc");
+    let thirdDesc=localStorage.getItem("thirdDesc");
+
+
     console.log(bannerHeading);
     home.innerHTML=navItem1;
     contact.innerHTML=navItem2;
@@ -62,6 +70,63 @@ function getNextElement(navbar,x){
         return x<box.left+box.width/2;
     })
 }
+
+// let currentSlide = 0;
+// const slides = document.querySelectorAll('.slide');
+
+// // Show first slide initially
+// slides[0].classList.add('active');
+
+// function showSlide(index) {
+//     // Remove active class from all slides
+//     slides.forEach(slide => {
+//         slide.classList.remove('active');
+//     });
+    
+//     // Add active class to current slide
+//     slides[index].classList.add('active');
+// }
+
+// function nextSlide() {
+//     currentSlide = (currentSlide + 1) % slides.length;
+//     showSlide(currentSlide);
+// }
+
+// function prevSlide() {
+//     currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+//     showSlide(currentSlide);
+// }
+
+// // Optional: Auto-play functionality
+// setInterval(nextSlide, 5000); // Change slide every 5 seconds
+
+
+
+
+let index=0;
+const slides=document.querySelectorAll(".slide");
+
+slides[0].classList.add("active");
+
+
+function initializeSlide(index){
+    slides.forEach((item)=>{
+        item.classList.remove("active");
+    })
+
+    slides[index].classList.add("active");
+}
+
+const prevSlide=()=>{
+    index=(index -1 + slides.length)%slides.length;
+    initializeSlide(index);
+}
+
+const nextSlide=()=>{
+    index=(index +1)%slides.length;
+    initializeSlide(index);
+}
+
 
 
 
