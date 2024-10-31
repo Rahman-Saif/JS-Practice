@@ -1,0 +1,77 @@
+/* styles.css */
+
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+}
+
+.section {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.result {
+    font-size: 36px;
+    color: #4caf50;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button styles */
+.increment {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.increment:hover {
+    background-color: #43a047;
+}
+
+.decrement {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.decrement:hover {
+    background-color: #e53935;
+}
+
+.reset {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.reset:hover {
+    background-color: #ffb300;
+}
