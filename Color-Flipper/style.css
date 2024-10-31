@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+nav{
+    text-align: center;
+}
+
+nav h1{
+    font-size:32px;
+    margin:100px;
+}
+
+main{
+    height:70vh;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .color_showing_box h1{
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+main .click_me_btn button{
+    padding:20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
