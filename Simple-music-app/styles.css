@@ -1,0 +1,84 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the main div */
+.main_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Music Player Container */
+.music-container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #fff;
+    width: 300px;
+}
+
+/* Song Title and Artist */
+#title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#artist {
+    font-size: 1em;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+/* Image Container */
+.img-container {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.img-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Audio Controls */
+audio {
+    width: 100%;
+    outline: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Music Controls */
+.music-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.music-controls i {
+    color: #f0f0f0;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.music-controls i:hover {
+    color: #ff4081;
+}
+
+/* Play Button */
+.main-button {
+    font-size: 2em;
+    color: #ff4081;
+}
